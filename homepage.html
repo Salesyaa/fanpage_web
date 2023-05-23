@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blackpink Homepage</title>
+    <!-- bootstrap 5 css -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+      integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK"
+      crossorigin="anonymous"
+    />
+    <!-- custom css -->
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <style>
+      body {
+        background-color: black;
+      }
+
+      li {
+        list-style: none;
+        margin: 20px 0 20px 0;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .sidebar {
+        width: 250px;
+        height: 100vh;
+        position: fixed;
+        margin-left: -300px;
+        transition: 0.4s;
+        background-color: rgb(252, 201, 212);
+      }
+
+      .active-main-content {
+        margin-left: 250px;
+      }
+
+      .active-sidebar {
+        margin-left: 0;
+      }
+
+      #main-content {
+        transition: 0.4s;
+        background-color: pink;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="sidebar p-4" id="sidebar">
+        <h4 class="mb-5 text-bg-dark">BLACKPINK's Fanpage</h4>
+        <li>
+          <a class="text-dark" href="homepage.html" target="_self" >
+            <i class="bi bi-house mr-2"></i>
+              Home
+          </a>
+        </li>
+        <li>
+          <a class="text-dark" href="rewards.html" target="_self">
+            <i class="bi bi-fire mr-2"></i>
+            Rewards
+          </a>
+        </li>
+        <li>
+          <a class="text-dark" href="news.html" target="_self">
+            <i class="bi bi-newspaper mr-2"></i>
+            News
+          </a>
+        </li>
+        <li>
+          <a class="text-dark" href="music.html" target="_self">
+            <i class="bi bi-boombox mr-2"></i>
+            Music
+          </a>
+        </li>
+        <li>
+          <a class="text-dark" href="biodata.html" target="_self">
+            <i class="bi bi-film mr-2"></i>
+            Biodata
+          </a>
+        </li>
+        <li>
+          <a class="text-dark" href="galery.html" target="_self">
+            <i class="bi bi-bookmark mr-2"></i>
+            Galery
+          </a>
+        </li>
+      </div>
+    </div>
+    <div class="p-4" id="main-content">
+      <button class="btn btn-dark" id="button-toggle">
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="card mt-4">
+        <div class="card-body">
+          <h4>H O M E P A G E</h4>
+          <br><img src="blackpink.jpeg" width="30%">
+          <p><br><b>Blackpink</b> (bahasa Korea: 블랙핑크, digayakan sebagai BLɅƆKPIИK) adalah grup vokal wanita asal Korea Selatan. Blackpink dibentuk oleh YG Entertainment dengan beranggotakan empat orang, diantaranya Jennie, Jisoo, Lisa, dan Rosé. 
+            Blackpink merupakan grup vokal wanita Korea yang memiliki lagu dengan posisi tertinggi di Billboard Hot 100, berada di nomor 55 dengan "Ddu-Du Ddu-Du", dan di Billboard 200, berada di nomor 40 dengan EP berjudul Square Up. Blackpink merupakan grup pop Korea perempuan pertama dan satu-satunya yang memasuki dan memuncaki Emerging Artists Billboard.' Mereka juga merupakan grup pop Korea wanita pertama yang mempunyai empat lagu di Billboard World Digital Song Sales. Di waktu yang sama saat rilis, "Ddu-Du Ddu-Du" memecahkan rekor sebagai video musik Korea yang paling banyak ditonton di YouTube dalam waktu 24 jam, sebelum dilewati oleh BTS dengan video musik mereka yang bertajuk "Idol".</p>
+        </div>
+      </div>
+    </div>
+<footer class="footer">
+  <div class="container py-3 text-white text-center">
+    <a href="https://www.instagram.com/blackpinkofficial/">Follow us on Instagram</a><br>
+    <span>&copy; 2023 Your Website. All rights reserved.</span>
+  </div>
+</footer>
+    <script>
+      // event will be executed when the toggle-button is clicked
+      document.getElementById("button-toggle").addEventListener("click", () => {
+        // when the button-toggle is clicked, it will add/remove the active-sidebar class
+        document.getElementById("sidebar").classList.toggle("active-sidebar");
+
+        // when the button-toggle is clicked, it will add/remove the active-main-content class
+        document.getElementById("main-content").classList.toggle(
+          "active-main-content"
+        );
+      });
+    </script>
+  </body>
+</html>

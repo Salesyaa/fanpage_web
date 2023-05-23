@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blackpink Galery</title>
+    <!-- bootstrap 5 css -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+      integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK"
+      crossorigin="anonymous"
+    />
+    <!-- custom css -->
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <style>
+      body {
+        background-color: black;
+      }
+
+      li {
+        list-style: none;
+        margin: 20px 0 20px 0;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .sidebar {
+        width: 250px;
+        height: 100vh;
+        position: fixed;
+        margin-left: -300px;
+        transition: 0.4s;
+        background-color: rgb(252, 201, 212);
+      }
+
+      .active-main-content {
+        margin-left: 250px;
+      }
+
+      .active-sidebar {
+        margin-left: 0;
+      }
+
+      #main-content {
+        transition: 0.4s;
+        background-color: pink;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="sidebar p-4" id="sidebar">
+        <h4 class="mb-5 text-bg-dark">BLACKPINK's Fanpage</h4>
+        <li>
+          <a class="text-dark" href="homepage.html" target="_self" >
+            <i class="bi bi-house mr-2"></i>
+              Home
+          </a>
+        </li>
+        <li>
+          <a class="text-dark" href="rewards.html" target="_self">
+            <i class="bi bi-fire mr-2"></i>
+            Rewards
+          </a>
+        </li>
+        <li>
+          <a class="text-dark" href="news.html" target="_self">
+            <i class="bi bi-newspaper mr-2"></i>
+            News
+          </a>
+        </li>
+        <li>
+          <a class="text-dark" href="music.html" target="_self">
+            <i class="bi bi-boombox mr-2"></i>
+            Music
+          </a>
+        </li>
+        <li>
+          <a class="text-dark" href="biodata.html" target="_self">
+            <i class="bi bi-film mr-2"></i>
+            Biodata
+          </a>
+        </li>
+        <li>
+          <a class="text-dark" href="galery.html" target="_self">
+            <i class="bi bi-bookmark mr-2"></i>
+            Galery
+          </a>
+        </li>
+      </div>
+    </div>
+    <div class="p-4" id="main-content">
+      <button class="btn btn-dark" id="button-toggle">
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="card mt-4">
+        <div class="card-body">
+          <h4>G A L E R Y</h4>
+          <br><h6>Whistle ERA</h6>
+          <img src="https://qph.cf2.quoracdn.net/main-qimg-6bce054b916cf08999aa2be914f368bb-pjlq" width="30%"> <br>
+          <br><h6>Boombayah ERA</h6>
+          <img src="https://qph.cf2.quoracdn.net/main-qimg-1b24ead5bcb699c471207844ae2cc21f-lq" width="30%"> <br>
+          <br><h6>Playing With Fire ERA</h6>
+          <img src="https://qph.cf2.quoracdn.net/main-qimg-c491d359237af4e5126abee06b4b4868-lq" width="30%"> <br>
+          <br><h6>STAY ERA</h6>
+          <img src="https://qph.cf2.quoracdn.net/main-qimg-fce024d0ef66f19708b53e2919fa156e-pjlq" width="30%"> <br>
+          <br><h6>As If It's Your Last ERA</h6>
+          <img src="https://qph.cf2.quoracdn.net/main-qimg-a2d9df73ef4668e27388160a9ae95ab7-lq" width="30%"> <br>
+          <br><h6>Kiss and Make Up ERA</h6>
+          <img src="https://qph.cf2.quoracdn.net/main-qimg-c714f5eb850fb4b08d701f72498ebf2e-lq" width="30%"> <br>
+          <br><h6>DDU-Du DDU-DU ERA</h6>
+          <img src="https://qph.cf2.quoracdn.net/main-qimg-7cf58e96253275db8ce982c565391389-lq" width="30%"> <br>
+          <br><h6>Kill This Love ERA</h6>
+          <img src="https://qph.cf2.quoracdn.net/main-qimg-da17b28c852b0b41c60fd99b87345872-lq" width="30%"> <br>
+          <br><h6>Sour Candy ERA</h6>
+          <img src="https://qph.cf2.quoracdn.net/main-qimg-bbdf8e843df0f3b3e219cb832bb98865-lq" width="30%"><br>
+          <br><h6>How You Like That ERA</h6>
+          <img src="https://i.pinimg.com/236x/cf/0c/22/cf0c227c8b7ef102e6c5abcd28e7aef6.jpg" width="30%"><br>
+          <br><h6>Lovesick Girls ERA</h6>
+          <img src="https://i.pinimg.com/564x/f1/61/d5/f161d58c25a72b2f2d8b66106dee9ba8.jpg" width="30%"><br>
+          <br><h6>Pink Venom ERA</h6>
+          <img src="https://i.pinimg.com/736x/e8/4d/d9/e84dd9c3e849598d9be3acaf8c9b9e2b.jpg" width="30%"><br>
+        </div>
+      </div>
+    </div>
+<footer class="footer">
+  <div class="container py-3 text-white text-center">
+    <a href="https://www.instagram.com/blackpinkofficial/">Follow us on Instagram</a><br>
+    <span>&copy; 2023 Your Website. All rights reserved.</span>
+  </div>
+</footer>
+    <script>
+      // event will be executed when the toggle-button is clicked
+      document.getElementById("button-toggle").addEventListener("click", () => {
+        // when the button-toggle is clicked, it will add/remove the active-sidebar class
+        document.getElementById("sidebar").classList.toggle("active-sidebar");
+
+        // when the button-toggle is clicked, it will add/remove the active-main-content class
+        document.getElementById("main-content").classList.toggle(
+          "active-main-content"
+        );
+      });
+    </script>
+  </body>
+</html>

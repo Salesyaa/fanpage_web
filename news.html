@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blackpink News</title>
+    <!-- bootstrap 5 css -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+      integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK"
+      crossorigin="anonymous"
+    />
+    <!-- custom css -->
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <style>
+      body {
+        background-color: black;
+      }
+
+      li {
+        list-style: none;
+        margin: 20px 0 20px 0;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .sidebar {
+        width: 250px;
+        height: 100vh;
+        position: fixed;
+        margin-left: -300px;
+        transition: 0.4s;
+        background-color: rgb(252, 201, 212);
+      }
+
+      .active-main-content {
+        margin-left: 250px;
+      }
+
+      .active-sidebar {
+        margin-left: 0;
+      }
+
+      #main-content {
+        transition: 0.4s;
+        background-color: pink;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="sidebar p-4" id="sidebar">
+        <h4 class="mb-5 text-bg-dark">BLACKPINK's Fanpage</h4>
+        <li>
+          <a class="text-dark" href="homepage.html" target="_self" >
+            <i class="bi bi-house mr-2"></i>
+              Home
+          </a>
+        </li>
+        <li>
+          <a class="text-dark" href="rewards.html" target="_self">
+            <i class="bi bi-fire mr-2"></i>
+            Rewards
+          </a>
+        </li>
+        <li>
+          <a class="text-dark" href="news.html" target="_self">
+            <i class="bi bi-newspaper mr-2"></i>
+            News
+          </a>
+        </li>
+        <li>
+          <a class="text-dark" href="music.html" target="_self">
+            <i class="bi bi-boombox mr-2"></i>
+            Music
+          </a>
+        </li>
+        <li>
+          <a class="text-dark" href="biodata.html" target="_self">
+            <i class="bi bi-film mr-2"></i>
+            Biodata
+          </a>
+        </li>
+        <li>
+          <a class="text-dark" href="galery.html" target="_self">
+            <i class="bi bi-bookmark mr-2"></i>
+            Galery
+          </a>
+        </li>
+      </div>
+    </div>
+    <div class="p-4" id="main-content">
+      <button class="btn btn-dark" id="button-toggle">
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="card mt-4">
+        <div class="card-body">
+          <h4>N E W S</h4>
+        <br><img src="data:image/jpeg;base64,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" width="50%">
+          <p><b>Lisa BLACKPINK Pamer Minum Es Cendol Sebelum Konser Born Pink di Jakarta</b>
+            <a href="https://www.kompas.com/hype/read/2023/05/19/192638266/lisa-blackpink-pamer-minum-es-cendol-sebelum-konser-born-pink-di-jakarta">...Lihat selengkapnya</a><br>
+          </p>
+
+        <br><img src="https://i.pinimg.com/564x/f3/b1/85/f3b185d227c2578deccd1d5e74eed41c.jpg" width="50%">
+          <p><b>Jennie & Jisoo BLACKPINK Sarankan Pergi Ke Jakarta Kalau Mau Diet</b> Begitu Selesai Menggelar Konser Hari Kedua Di Tanah Air, Jennie Dan Jisoo Terlihat Berdiri Di Depan AC Floor Standing. Kedua Idol Itu Sambat Soal Kondisi Cuaca Jakarta Yang Terlalu Panas
+            <a href="https://www.wowkeren.com/berita/tampil/00480290.html">...Lihat selengkapnya</a><br>
+          </p>
+
+        <br><img src="https://radarmukomuko.disway.id/upload/b2a3beae31aa2e94148a5c7807ddf25a.jpg" width="50%">
+          <p><b>V BTS dan Jennie BLACKPINK ‘Terciduk’ Pacaran, Pihak Agensi Langsung Buka Suara</b> Sebuah kabar yang cukup menggeparkan para penggemar K-Pop datang dari gossip yang menbicarkan V BTS dan Jennie BLACKPINK yang di duga pacaran di Paris
+            <a href="https://radarmukomuko.disway.id/read/658555/v-bts-dan-jennie-blackpink-terciduk-pacaran-pihak-agensi-langsung-buka-suara">...Lihat selengkapnya</a><br>
+         </p>
+        </div>
+      </div>
+    </div>
+<footer class="footer">
+  <div class="container py-3 text-white text-center">
+    <a href="https://www.instagram.com/blackpinkofficial/">Follow us on Instagram</a><br>
+    <span>&copy; 2023 Your Website. All rights reserved.</span>
+  </div>
+</footer>
+    <script>
+      // event will be executed when the toggle-button is clicked
+      document.getElementById("button-toggle").addEventListener("click", () => {
+        // when the button-toggle is clicked, it will add/remove the active-sidebar class
+        document.getElementById("sidebar").classList.toggle("active-sidebar");
+
+        // when the button-toggle is clicked, it will add/remove the active-main-content class
+        document.getElementById("main-content").classList.toggle(
+          "active-main-content"
+        );
+      });
+    </script>
+  </body>
+</html>
